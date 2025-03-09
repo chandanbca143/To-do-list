@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(52, 141, 141);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: calc(100% - 70px);
+    padding: 8px;
+    border: 2px solid rgb(6, 145, 145);
+    outline: none;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+button {
+    width: 60px;
+    height: 41px;
+    margin-top: 9px;
+    background-color: rgb(4, 29, 29);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.text ul {
+    position: relative;
+    background-color: rgb(5, 31, 31);
+    color: white;
+    font-size: 16px;
+    padding: 7px;
+    text-align: left;
+    list-style: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+h3 {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    /* z-index: 10; */
+    font-size: 19px;
+    margin-top: 90px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 12px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    input {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        height: 38px;
+    }
+    .text ul {
+        font-size: 14px;
+    }
+}
